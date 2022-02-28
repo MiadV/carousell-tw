@@ -47,7 +47,7 @@ export default class Document extends NextDocument {
             name='msapplication-config'
           />
         </Head>
-        <body className='bg-gray-100 dark:bg-gray-900'>
+        <body className='text-gray-900 dark:bg-gray-900 dark:text-gray-50'>
           <Main />
           <NextScript />
         </body>
