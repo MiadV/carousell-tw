@@ -1,69 +1,56 @@
+import Image from 'next/image';
 import Link from 'next/link';
-import AlertIcon from '@/icons/AlertIcon';
-import SearchForm from './SearchForm';
+import NoticeBar from './NoticeBar';
+import TopBar from './TopBar';
+import { SearchForm, SearchFormCompact } from './SearchForm';
 
 const Header = () => {
   return (
     <header className='border-b border-gray-200 shadow-sm'>
-      <section
-        id='notice-bar'
-        className='flex items-center justify-center space-x-2 bg-gray-100 p-3'
-      >
-        <AlertIcon />
-        <Link href=''>
-          <a>
-            <span className='font-semibold'>COVID-19 Updates</span>{' '}
-            <span className='text-sm text-gray-600'>
-              Keeping you safe while you use Carousell
-            </span>
-          </a>
-        </Link>
-      </section>
-
-      <div id='top-bar' className='h-10 bg-gray-900 px-16 text-sm text-white'>
-        <div className='mx-auto h-full max-w-screen-lg'>
-          <div className='flex h-full items-center'>
-            <span className='border-r border-gray-500 pr-4'>
-              <a className='block h-5 w-5'>L</a>
-            </span>
-            <nav className='h-full'>
-              <ul className='flex h-full items-center'>
-                <li className='flex h-full cursor-pointer items-center px-2 hover:bg-gray-700'>
-                  Fashion
-                </li>
-                <li className='flex h-full cursor-pointer items-center px-2 hover:bg-gray-700'>
-                  Home & Living
-                </li>
-                <li className='flex h-full cursor-pointer items-center px-2 hover:bg-gray-700'>
-                  Test
-                </li>
-                <li className='flex h-full cursor-pointer items-center px-2 hover:bg-gray-700'>
-                  Test
-                </li>
-              </ul>
-            </nav>
-            <div className='ml-auto h-full'>
-              <button className='h-full px-4 font-semibold hover:bg-gray-700'>
-                Register
-              </button>
-              <button className='h-full px-4 font-semibold hover:bg-gray-700'>
-                Login
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section>
+      <NoticeBar classname='hidden md:flex' />
+      <TopBar classname='hidden md:block' />
+      <section className='py-1 px-4 md:px-16'>
         <div className='mx-auto max-w-screen-lg'>
           <div className='flex items-center justify-between py-1'>
-            <div className='text-3xl font-bold text-gray-500'>carousell</div>
-            <div id='search-form'>
-              <SearchForm />
+            <Link href='/'>
+              <a className='flex shrink-0'>
+                <span className='block lg:hidden'>
+                  <Image
+                    src='/images/logo-compact.svg'
+                    alt='logo'
+                    width={32}
+                    height={32}
+                  />
+                </span>
+                <span className='hidden lg:block'>
+                  <Image
+                    src='/images/logo.svg'
+                    alt='logo'
+                    width={160}
+                    height={32}
+                  />
+                </span>
+              </a>
+            </Link>
+            <div id='search-form' className='mx-4 max-w-4xl grow md:mx-10'>
+              <span className='md:hidden'>
+                <SearchFormCompact />
+              </span>
+              <span className='hidden md:block'>
+                <SearchForm />
+              </span>
             </div>
             <div>
-              <button className='rounded bg-red-500 px-6 py-1 font-semibold text-white'>
-                Sell
-              </button>
+              <span className='hidden md:block'>
+                <button className='rounded bg-red-500 px-6 py-1 font-semibold text-white focus:outline-none focus:ring-4 focus:ring-red-500/30'>
+                  Sell
+                </button>
+              </span>
+              <span className='md:hidden'>
+                <button className='rounded border px-2 py-1 font-semibold focus:outline-none focus:ring-4 focus:ring-red-500/30'>
+                  Login
+                </button>
+              </span>
             </div>
           </div>
         </div>
