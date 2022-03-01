@@ -1,12 +1,13 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import NoticeBar from './NoticeBar';
 import TopBar from './TopBar';
 import { SearchForm, SearchFormCompact } from './SearchForm';
+import { CompactLogo, FullLogo } from './Logo';
+import { ThemeToggle } from './ThemeToggle';
 
 const Header = () => {
   return (
-    <header className='border-b border-gray-200 shadow-sm'>
+    <header className='border-b border-gray-50 bg-white shadow-md dark:border-gray-600 dark:bg-gray-800'>
       <NoticeBar classname='hidden md:flex' />
       <TopBar classname='hidden md:block' />
       <section className='py-1 px-4 md:px-16'>
@@ -15,20 +16,10 @@ const Header = () => {
             <Link href='/'>
               <a className='flex shrink-0'>
                 <span className='block lg:hidden'>
-                  <Image
-                    src='/images/logo-compact.svg'
-                    alt='logo'
-                    width={32}
-                    height={32}
-                  />
+                  <CompactLogo />
                 </span>
                 <span className='hidden lg:block'>
-                  <Image
-                    src='/images/logo.svg'
-                    alt='logo'
-                    width={160}
-                    height={32}
-                  />
+                  <FullLogo />
                 </span>
               </a>
             </Link>
@@ -46,10 +37,8 @@ const Header = () => {
                   Sell
                 </button>
               </span>
-              <span className='md:hidden'>
-                <button className='rounded border px-2 py-1 font-semibold focus:outline-none focus:ring-4 focus:ring-red-500/30'>
-                  Login
-                </button>
+              <span className='flex items-center justify-center md:hidden'>
+                <ThemeToggle />
               </span>
             </div>
           </div>
