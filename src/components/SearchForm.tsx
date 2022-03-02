@@ -37,7 +37,7 @@ export const SearchForm = () => {
         <div className='relative'>
           <Listbox.Button
             className={({ open }) =>
-              `flex w-full items-center justify-between py-2 px-4 transition-colors duration-150 focus:bg-white focus:outline-none dark:focus:bg-gray-600 ${
+              `flex w-full items-center justify-between rounded py-2 px-4 transition-colors duration-150 focus:bg-white focus:outline-none dark:focus:bg-gray-600 ${
                 open ? 'bg-white dark:bg-gray-600' : 'bg-transparent'
               }`
             }
@@ -92,7 +92,7 @@ export const SearchForm = () => {
         <div className='relative min-w-[100px] shrink-0'>
           <Listbox.Button
             className={({ open }) =>
-              `flex w-full items-center justify-between py-2 px-4 transition-colors duration-150 focus:bg-white focus:outline-none dark:focus:bg-gray-600 ${
+              `flex w-full items-center justify-between rounded py-2 px-4 transition-colors duration-150 focus:bg-white focus:outline-none dark:focus:bg-gray-600 ${
                 open ? 'bg-white dark:bg-gray-600' : 'bg-transparent'
               }`
             }
