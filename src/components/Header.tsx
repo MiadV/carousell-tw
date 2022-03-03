@@ -7,7 +7,7 @@ import { ThemeToggle } from './ThemeToggle';
 
 const Header = () => {
   return (
-    <header className='border-b border-gray-100 bg-white shadow-md dark:border-gray-600 dark:bg-gray-900'>
+    <header className='sticky inset-x-0 top-0 z-20 border-b border-gray-100 bg-white shadow-md dark:border-gray-600 dark:bg-gray-900'>
       <NoticeBar classname='hidden md:flex' />
       <TopBar classname='hidden md:block' />
       <section className='py-1 px-4 md:px-16'>
