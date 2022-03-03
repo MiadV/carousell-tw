@@ -7,3 +7,94 @@
     color-scheme: dark;
   }
 }
+
+/* styling Swiper default navigations elements */
+.swiper-button-next {
+  background-color: theme('colors.white');
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  box-shadow: theme('boxShadow.lg');
+  transition: all;
+  transition-duration: 150ms;
+  opacity: 0.8;
+}
+
+html.dark .swiper-button-next {
+  background-color: theme('colors.slate.600');
+}
+
+.swiper-button-next:hover {
+  background-color: theme('colors.slate.200');
+}
+
+html.dark .swiper-button-next:hover {
+  background-color: theme('colors.slate.400');
+}
+
+.swiper-button-next::after {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html.dark .swiper-button-next::after {
+  color: theme('colors.white');
+}
+
+.swiper-button-prev {
+  background-color: theme('colors.white');
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  box-shadow: theme('boxShadow.lg');
+  transition: all;
+  transition-duration: 150ms;
+}
+
+html.dark .swiper-button-prev {
+  background-color: theme('colors.slate.600');
+}
+
+.swiper-button-prev:hover {
+  background-color: theme('colors.slate.200');
+}
+
+html.dark .swiper-button-prev:hover {
+  background-color: theme('colors.slate.400');
+}
+
+.swiper-button-prev::after {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html.dark .swiper-button-prev::after {
+  color: theme('colors.white');
+}
+
+html.dark .swiper-scrollbar {
+  background: rgb(255, 255, 255, 0.2);
+}
+html.dark .swiper-scrollbar-drag {
+  background: rgb(255, 255, 255, 0.6);
+}
+/* end of styling Swiper default navigations elements */
+
+/* styling Swiper default pagination elements */
+
+.swiper-pagination-bullet {
+  outline: 1px solid theme('colors.gray.50');
+}
+
+.swiper-pagination-bullet-active {
+  background: white;
+  outline: 2px solid theme('colors.teal.500');
+}
+
+@media screen(md) {
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+/* end of styling Swiper default pagination elements */

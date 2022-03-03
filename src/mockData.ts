@@ -1,3 +1,22 @@
+export const slides = [
+  {
+    image: '/images/slides/s1-min.jpg',
+    href: '/#',
+  },
+  {
+    image: '/images/slides/s2-min.jpg',
+    href: '/#',
+  },
+  {
+    image: '/images/slides/s3-min.jpg',
+    href: '/#',
+  },
+  {
+    image: '/images/slides/s4-min.jpg',
+    href: '/#',
+  },
+];
+
 export const categories = [
   {
     title: 'Following',

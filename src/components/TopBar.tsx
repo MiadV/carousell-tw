@@ -1,10 +1,11 @@
-import React, { memo } from 'react';
+import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Popover, Transition } from '@headlessui/react';
 import { ThemeToggle } from './ThemeToggle';
 import { BWCompactLogo } from './Logo';
 import { topBarLinks } from '@/mockData';
-import Image from 'next/image';
+import ChevronDown from '@/icons/ChevronDown';
 
 const TopBar: React.FC<{ classname?: string }> = ({ classname }) => {
   return (
@@ -12,7 +13,7 @@ const TopBar: React.FC<{ classname?: string }> = ({ classname }) => {
       id='top-bar'
       className={`h-10 bg-gray-800 px-16 text-sm text-white dark:border-b dark:border-gray-600 ${classname}`}
     >
-      <div className='mx-auto h-full max-w-screen-lg'>
+      <div className='mx-auto h-full max-w-screen-xl'>
         <div className='flex h-full items-center'>
           <span className='border-r border-gray-500 pr-4'>
             <Link href='/'>
@@ -27,8 +28,12 @@ const TopBar: React.FC<{ classname?: string }> = ({ classname }) => {
                 <Popover as='li' className='h-full' key={i}>
                   {({ open }) => (
                     <>
-                      <Popover.Button className='relative flex h-full cursor-pointer items-center overflow-hidden truncate px-2 transition-all duration-75 hover:bg-gray-600'>
+                      <Popover.Button
+                        className='relative flex h-full cursor-pointer items-center overflow-hidden truncate px-2 transition-all duration-75 hover:bg-gray-600'
+                        onClick={() => console.log('clicked')}
+                      >
                         {item}
+                        <ChevronDown />
                         {open && (
                           <span className='absolute bottom-0 left-[calc(50%_-_8px)]'>
                             <svg

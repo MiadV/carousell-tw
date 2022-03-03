@@ -7,11 +7,11 @@ import { ThemeToggle } from './ThemeToggle';
 
 const Header = () => {
   return (
-    <header className='border-b border-gray-50 bg-white shadow-md dark:border-gray-600 dark:bg-gray-800'>
+    <header className='border-b border-gray-100 bg-white shadow-md dark:border-gray-600 dark:bg-gray-900'>
       <NoticeBar classname='hidden md:flex' />
       <TopBar classname='hidden md:block' />
       <section className='py-1 px-4 md:px-16'>
-        <div className='mx-auto max-w-screen-lg'>
+        <div className='mx-auto max-w-screen-xl'>
           <div className='flex items-center justify-between py-1'>
             <Link href='/'>
               <a className='flex shrink-0'>

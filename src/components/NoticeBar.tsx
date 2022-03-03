@@ -13,7 +13,7 @@ const NoticeBar: React.FC<{ classname?: string }> = ({ classname }) => {
         <a>
           <span className='font-semibold'>COVID-19 Updates</span>{' '}
           <span className='text-sm text-gray-600 dark:text-gray-300'>
-            Keeping you safe while you use Carousell
+            Keeping you safe while you use Caroosell
           </span>
         </a>
       </Link>
