@@ -606,3 +606,270 @@ export const topBarLinks: Record<
     ],
   ],
 };
+
+export const topSearches = [
+  { href: '/#', title: 'iphone' },
+  { href: '/#', title: 'ipad' },
+  { href: '/#', title: 'nike' },
+  { href: '/#', title: 'ps4' },
+  { href: '/#', title: 'sofa' },
+  { href: '/#', title: 'ikea' },
+  { href: '/#', title: 'blouse' },
+  { href: '/#', title: 'adidas' },
+  { href: '/#', title: 'uniqlo' },
+  { href: '/#', title: 'sweatshirt' },
+  { href: '/#', title: 'laptop' },
+  { href: '/#', title: 'vans' },
+  { href: '/#', title: 'dress' },
+  { href: '/#', title: 'monitor' },
+  { href: '/#', title: 'vtg' },
+  { href: '/#', title: 'zara' },
+  { href: '/#', title: 'ps5' },
+  { href: '/#', title: 'tv' },
+  { href: '/#', title: 'iphone 13' },
+  { href: '/#', title: 'hoodie' },
+  { href: '/#', title: 'coach' },
+  { href: '/#', title: 'nintendo switch' },
+  { href: '/#', title: 'carhartt' },
+  { href: '/#', title: 'converse' },
+  { href: '/#', title: 'top' },
+  { href: '/#', title: 'sling bag' },
+  { href: '/#', title: 'gucci' },
+  { href: '/#', title: 'macbook' },
+  { href: '/#', title: 'vintage' },
+  { href: '/#', title: 'dior' },
+  { href: '/#', title: 'stussy' },
+  { href: '/#', title: 'charles and keith' },
+  { href: '/#', title: 'baju kurung' },
+  { href: '/#', title: 'table' },
+  { href: '/#', title: 'cap' },
+  { href: '/#', title: 'jacket' },
+  { href: '/#', title: 'ipad pro' },
+  { href: '/#', title: 'h&amp;m' },
+  { href: '/#', title: 'nike dunk' },
+  { href: '/#', title: 'duck' },
+  { href: '/#', title: 'rolex' },
+  { href: '/#', title: 'dr martens' },
+  { href: '/#', title: 'bag' },
+  { href: '/#', title: 'samsung' },
+  { href: '/#', title: 'watch' },
+  { href: '/#', title: 'supreme' },
+  { href: '/#', title: 'prada' },
+  { href: '/#', title: 'airpods' },
+  { href: '/#', title: 'windbreaker' },
+  { href: '/#', title: 'chanel' },
+];
+
+export const footerLinks = {
+  Fashion: [
+    {
+      href: '/#',
+      title: "Men's Fashion",
+    },
+    {
+      href: '/#',
+      title: "Women's Fashion",
+    },
+    {
+      href: '/#',
+      title: 'Health & Beauty',
+    },
+    {
+      href: '/#',
+      title: 'Luxury',
+    },
+    {
+      href: '/#',
+      title: "Men's Watches",
+    },
+    {
+      href: '/#',
+      title: "Men's Clothes",
+    },
+    {
+      href: '/#',
+      title: "Women's Clothes",
+    },
+    {
+      href: '/#',
+      title: "Women's Bags & Wallets",
+    },
+    {
+      href: '/#',
+      title: 'Muslimah Fashion',
+    },
+    {
+      href: '/#',
+      title: 'Skin, Bath, & Body',
+    },
+  ],
+  'Home & Living': [
+    {
+      href: '/#',
+      title: "Men's Fashion",
+    },
+    {
+      href: '/#',
+      title: 'Furniture',
+    },
+    {
+      href: '/#',
+      title: 'Gardening',
+    },
+    {
+      href: '/#',
+      title: 'Books & Stationery',
+    },
+    {
+      href: '/#',
+      title: 'Kitchen & Appliances',
+    },
+    {
+      href: '/#',
+      title: 'Textbooks',
+    },
+    {
+      href: '/#',
+      title: 'Babies & Kids',
+    },
+    {
+      href: '/#',
+      title: "Children's Books",
+    },
+    {
+      href: '/#',
+      title: "Girls' Apparel",
+    },
+    {
+      href: '/#',
+      title: "Boys' Apparel",
+    },
+    {
+      href: '/#',
+      title: 'Strollers, Bags & Carriers',
+    },
+  ],
+  'Mobiles & Electronics': [
+    {
+      href: '/#',
+      title: 'Mobile Phones & Tablets',
+    },
+    {
+      href: '/#',
+      title: 'Electronics',
+    },
+    {
+      href: '/#',
+      title: 'iPhone',
+    },
+    {
+      href: '/#',
+      title: 'Android Phones',
+    },
+    {
+      href: '/#',
+      title: 'Cases & Sleeves',
+    },
+    {
+      href: '/#',
+      title: 'Tablets',
+    },
+    {
+      href: '/#',
+      title: 'Power Banks & Chargers',
+    },
+    {
+      href: '/#',
+      title: 'Audio',
+    },
+    {
+      href: '/#',
+      title: 'Computers',
+    },
+    {
+      href: '/#',
+      title: 'TVs & Entertainment Systems',
+    },
+  ],
+  'Hobbies & Games': [
+    {
+      href: '/#',
+      title: 'Photography',
+    },
+    {
+      href: '/#',
+      title: 'Video Gaming',
+    },
+    {
+      href: '/#',
+      title: 'K-Wave',
+    },
+    {
+      href: '/#',
+      title: 'Tickets & Vouchers',
+    },
+    {
+      href: '/#',
+      title: 'Toys & Games',
+    },
+    {
+      href: '/#',
+      title: 'Antiques',
+    },
+    {
+      href: '/#',
+      title: 'Pet Supplies',
+    },
+    {
+      href: '/#',
+      title: 'Design & Craft',
+    },
+    {
+      href: '/#',
+      title: 'Food & Drinks',
+    },
+    {
+      href: '/#',
+      title: 'Sports',
+    },
+  ],
+  'Jobs & Services': [
+    {
+      href: '/#',
+      title: 'Home Services',
+    },
+    {
+      href: '/#',
+      title: 'Jobs',
+    },
+    {
+      href: '/#',
+      title: 'Beauty Services',
+    },
+    {
+      href: '/#',
+      title: 'Part-time Jobs',
+    },
+    {
+      href: '/#',
+      title: 'Full-time Jobs',
+    },
+    {
+      href: '/#',
+      title: 'Aircon Services',
+    },
+
+    {
+      href: '/#',
+      title: 'Home Cleaning',
+    },
+    {
+      href: '/#',
+      title: 'Electronics & Gadget Repairs',
+    },
+    {
+      href: '/#',
+      title: 'Tuition',
+    },
+  ],
+};
