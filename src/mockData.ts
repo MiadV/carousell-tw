@@ -645,7 +645,7 @@ export const topSearches = [
   { href: '/#', title: 'cap' },
   { href: '/#', title: 'jacket' },
   { href: '/#', title: 'ipad pro' },
-  { href: '/#', title: 'h&amp;m' },
+  { href: '/#', title: 'h&m' },
   { href: '/#', title: 'nike dunk' },
   { href: '/#', title: 'duck' },
   { href: '/#', title: 'rolex' },
@@ -660,7 +660,55 @@ export const topSearches = [
   { href: '/#', title: 'chanel' },
 ];
 
-export const footerLinks = {
+export const footerCategories: Record<
+  string,
+  {
+    href: string;
+    title: string;
+  }[]
+> = {
+  'Cars & Property': [
+    {
+      href: '/#',
+      title: 'Used Cars for Sale',
+    },
+    {
+      href: '/#',
+      title: 'New Cars for Sale',
+    },
+    {
+      href: '/#',
+      title: 'Car Rentals',
+    },
+    {
+      href: '/#',
+      title: 'Car Accessories',
+    },
+    {
+      href: '/#',
+      title: 'Motorcycles for Sale',
+    },
+    {
+      href: '/#',
+      title: 'Motorcycle Accessories',
+    },
+    {
+      href: '/#',
+      title: 'Property for Sale',
+    },
+    {
+      href: '/#',
+      title: 'Property for Rent',
+    },
+    {
+      href: '/#',
+      title: 'Apartments & Condos Sale',
+    },
+    {
+      href: '/#',
+      title: 'Bungalow House Sale',
+    },
+  ],
   Fashion: [
     {
       href: '/#',
@@ -704,10 +752,6 @@ export const footerLinks = {
     },
   ],
   'Home & Living': [
-    {
-      href: '/#',
-      title: "Men's Fashion",
-    },
     {
       href: '/#',
       title: 'Furniture',
@@ -873,3 +917,13 @@ export const footerLinks = {
     },
   ],
 };
+
+export const footerLinks = [
+  { title: 'Help Centre', href: '/#' },
+  { title: 'Contact Us', href: '/#' },
+  { title: 'Press', href: '/#' },
+  { title: 'Jobs', href: '/#' },
+  { title: 'Advertise with Us', href: '/#' },
+  { title: 'Terms', href: '/#' },
+  { title: 'Privacy', href: '/#' },
+];

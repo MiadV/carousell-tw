@@ -7,7 +7,9 @@ import { categories } from '@/mockData';
 const Categories: React.FC<{ classname?: string }> = ({ classname }) => {
   return (
     <section id='categories' className={classname}>
-      <h3 className='block text-2xl font-semibold'>Explore Caroosell</h3>
+      <h3 className='block text-lg font-semibold md:text-2xl'>
+        Explore Caroosell
+      </h3>
       <div className='mt-4'>
         <Swiper
           modules={[FreeMode, Navigation, Scrollbar]}
