@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Disclosure, Transition } from '@headlessui/react';
 import { topSearches, footerCategories, footerLinks } from '@/mockData';
 import ChevronDown from '@/icons/ChevronDown';
+import { Fragment } from 'react';
 
 const Footer: React.FC<{ classname?: string }> = ({ classname }) => {
   return (
@@ -67,10 +68,8 @@ const FooterCategories: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <div id='footer-categories' className={className}>
       {Object.keys(footerCategories).map((cat) => (
-        <>
-          <span key={cat} className='mb-2 mt-8 block text-xs font-semibold'>
-            {cat}
-          </span>
+        <Fragment key={cat}>
+          <span className='mb-2 mt-8 block text-xs font-semibold'>{cat}</span>
 
           <div className='flex flex-wrap justify-start gap-1 text-xs'>
             {footerCategories[cat].map((links) => (
@@ -83,7 +82,7 @@ const FooterCategories: React.FC<{ className?: string }> = ({ className }) => {
               </Link>
             ))}
           </div>
-        </>
+        </Fragment>
       ))}
     </div>
   );
