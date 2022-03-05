@@ -4,7 +4,6 @@ import Header from '@/components/Header';
 import NoticeCard from '@/components/NoticeCard';
 import HeroSlider from '@/components/HeroSlider';
 import Categories from '@/components/Categories';
-import DailyPicks from '@/components/DailyPicks';
 import Recommended from '@/components/Recommended';
 import DownloadApp from '@/components/DownloadApp';
 import Footer from '@/components/Footer';
@@ -20,7 +19,6 @@ const Home: NextPage = () => {
           <NoticeCard classname='mt-4 md:hidden' />
           <HeroSlider classname='mt-4' />
           <Categories classname='mt-12' />
-          <DailyPicks classname='mt-12' />
           <Recommended classname='mt-12' />
         </div>
       </main>

@@ -33,7 +33,7 @@ const Header = () => {
             </div>
             <div>
               <span className='hidden md:block'>
-                <button className='rounded bg-red-500 px-6 py-1 font-semibold text-white focus:outline-none focus:ring-4 focus:ring-red-500/30'>
+                <button className='rounded bg-red-500 px-6 py-1 font-semibold text-white transition-all duration-300 hover:bg-red-700 focus:outline-none focus:ring-4 focus:ring-red-500/30'>
                   Sell
                 </button>
               </span>
