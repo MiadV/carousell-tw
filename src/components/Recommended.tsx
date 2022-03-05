@@ -1,12 +1,6 @@
 import { Fragment } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import dayjs from 'dayjs';
-import relativeTime from 'dayjs/plugin/relativeTime';
-import HeartIcon from '@/icons/HeartIcon';
+import ProductItem from './ProductItem';
 import { mockProducts } from '@/mockProducts';
-
-dayjs.extend(relativeTime);
 
 const Recommended: React.FC<{ classname?: string }> = ({ classname }) => {
   return (
@@ -32,52 +26,3 @@ const Recommended: React.FC<{ classname?: string }> = ({ classname }) => {
 };
 
 export default Recommended;
-
-const ProductItem: React.FC<{ product: typeof mockProducts[number] }> = ({
-  product,
-}) => {
-  return (
-    <Link href={'/#'}>
-      <a className='block rounded border border-gray-100 p-2 transition-all hover:border-teal-500 hover:shadow-xl dark:border-gray-600 dark:hover:border-teal-500'>
-        <div className='mb-2 flex items-center justify-start'>
-          <span>
-            <Image
-              src={product.avatar}
-              alt={product.username}
-              height={32}
-              width={32}
-              className='rounded-full border-gray-300'
-            />
-          </span>
-          <div className='ml-2'>
-            <span className='block text-sm font-semibold'>
-              {product.username}
-            </span>
-            <span className='block text-xs'>
-              {dayjs(product.uploaded_at).from(dayjs('2021-11-17T20:46:55Z'))}
-            </span>
-          </div>
-        </div>
-        <div>
-          <Image
-            src={product.photo}
-            alt={product.title}
-            height={300}
-            width={300}
-            className='rounded'
-            objectFit='cover'
-          />
-        </div>
-        <div className='mt-1 space-y-1'>
-          <p className='text-sm font-semibold'>{product.title}</p>
-          <p className='text-base font-semibold'>{product.price}</p>
-          <p className='text-sm'>{product.state}</p>
-        </div>
-
-        <div className='mt-4'>
-          <HeartIcon height={16} width={16} />
-        </div>
-      </a>
-    </Link>
-  );
-};
