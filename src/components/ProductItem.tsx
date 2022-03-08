@@ -51,8 +51,10 @@ const ProductItem: React.FC<{ product: typeof mockProducts[number] }> = ({
         </div>
 
         <div className='mt-1 space-y-1'>
-          <p className='h-10 text-sm font-semibold'>
-            {product.title.slice(0, 60) + '...'}
+          <p className='text-sm font-semibold'>
+            {product.title.length > 40
+              ? product.title.slice(0, 40) + '...'
+              : product.title}
           </p>
           <p className='text-lg font-semibold'>{product.price}</p>
           <p className='text-sm text-gray-600 dark:text-gray-300'>
