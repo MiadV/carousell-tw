@@ -3,7 +3,6 @@ import { Listbox, Transition } from '@headlessui/react';
 import SearchIcon from '@/icons/SearchIcon';
 import LocationIcon from '@/icons/LocationIcon';
 import ChevronUpDown from '@/icons/ChevronUpDown';
-import Button from './Button';
 
 export const SearchFormCompact = () => {
   return (
@@ -128,9 +127,12 @@ export const SearchForm = () => {
           </Transition>
         </div>
       </Listbox>
-      <Button type='submit'>
+      <button
+        type='submit'
+        className='m-1.5 rounded bg-teal-600 py-1 px-3 focus:outline-none focus:ring-4 focus:ring-teal-500/30'
+      >
         <SearchIcon className='h-4 w-4 text-white' />
-      </Button>
+      </button>
     </form>
   );
 };
