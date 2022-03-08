@@ -1,34 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Responsive Online Marketplace Landing Page + Dark Mode
 
-## Getting Started
+> This is my attempt at re-creating an existing [Online Marketplace](https://www.carousell.com/) landing page.
 
-First, run the development server:
+## Responsive Online Marketplace Landing Page
 
-```bash
-npm run dev
-# or
-yarn dev
+- Responsive design.
+- Dark Mode enabled.
+- Developed with mobile-first approach.
+
+This project is built using [React.js](https://reactjs.org/), [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Typescript](https://www.typescriptlang.org/).
+
+[**👉View Live**]()
+
+Join my youtube channel to see more videos on this topic. [Youtube Channel](https://www.youtube.com/c/MiadVosoughi)
+
+![Online Marketplace Landing Page](/preview.png)
+
+### Folder Structure
+
+Project directories are structured as follows:
+
+```
+root
+    ├── /public
+        ├── /favicons
+        ├── /images
+            ├── /categories
+            ├── /products
+            ├── /slides
+    ├── /src
+        ├── /components
+        ├── /pages
+        ├── /styles
+        ├── /fonts
+        ├── /icons
+package.json
+tsconfig.json
+next.config.js
+postcss.config.js
+tailwind.config.js
+README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running Locally
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. Clone this reposiroty `git clone https://github.com/MiadV/carousell-tw.git`
+2. Navigate to project folder and install the dependencies.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+npm install
+npm run dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-## Learn More
+### Cloning / Forking
 
-To learn more about Next.js, take a look at the following resources:
+Please review the [license](LICENSE) and remove all client information (logo, address, images, branding content, etc.).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Social Media
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="center">
+    <a href="https://www.buymeacoffee.com/miad" alt="buymeacoffee">
+        <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=flat&logo=buy-me-a-coffee&logoColor=black" />
+    </a>
+    <a href="mailto:miadv.biz@gmail.com" alt="gmail">
+    <a href="https://www.linkedin.com/in/miad-vosoughi" alt="LinkedIn">
+        <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat&logo=linkedin&logoColor=white" />
+    </a>
+    <a href="mailto:miadv.biz@gmail.com" alt="gmail">
+        <img src="https://img.shields.io/badge/Gmail-D14836.svg?style=flat&logo=gmail&logoColor=white" />
+    </a>
+    <a href="https://twitter.com/Miad_Vosoughi" alt="twitter">
+        <img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=flat&logo=twitter&logoColor=white" />
+    </a>
+    <a href="https://www.youtube.com/c/MiadVosoughi" alt="youtube">
+        <img src="https://img.shields.io/badge/Youtube-%23FF0000.svg?style=flat&logo=youTube&logoColor=white" />
+    </a>
+    <a href="https://www.instagram.com/miadv.dev" alt="instagram">
+        <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=flat&logo=instagram&logoColor=white" />
+    </a>
+</p>
